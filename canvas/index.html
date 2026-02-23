@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome 2026</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #1e1b4b, #312e81, #0f172a);
+    overflow:hidden;
+}
+
+/* Card */
+.card{
+    width:600px;
+    height:300px;
+    background: linear-gradient(135deg, rgba(139,92,246,0.8), rgba(59,130,246,0.8));
+    backdrop-filter: blur(15px);
+    border-radius:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    position:relative;
+}
+
+/* Title */
+.card h1{
+    font-size:40px;
+    letter-spacing:1px;
+    margin-bottom:10px;
+    text-shadow: 0 0 15px rgba(255,255,255,0.6);
+}
+
+/* Subtitle */
+.card p{
+    font-size:18px;
+    opacity:0.9;
+}
+
+/* Floating bubbles */
+.bubble{
+    position:absolute;
+    border-radius:50%;
+    background: rgba(255,255,255,0.2);
+    animation: float 6s infinite ease-in-out;
+}
+
+.b1{ width:40px; height:40px; top:20px; left:40px; }
+.b2{ width:25px; height:25px; bottom:30px; right:50px; animation-delay:1s; }
+.b3{ width:15px; height:15px; top:80px; right:80px; animation-delay:2s; }
+.b4{ width:20px; height:20px; bottom:50px; left:100px; animation-delay:3s; }
+
+@keyframes float{
+    0%,100%{ transform: translateY(0px); }
+    50%{ transform: translateY(-20px); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="bubble b1"></div>
+    <div class="bubble b2"></div>
+    <div class="bubble b3"></div>
+    <div class="bubble b4"></div>
+
+    <h1>Welcome to 2026 ✨</h1>
+    <p>A new chapter begins.</p>
+</div>
+
+</body>
+</html>
